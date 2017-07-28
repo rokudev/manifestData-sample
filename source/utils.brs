@@ -1,13 +1,5 @@
 '
 ' Copyright (c) 2016 Roku, Inc. All rights reserved.
-' This software and any compilation or derivative thereof is,
-' and shall remain, the proprietary information of Roku, Inc. and
-' is highly confidential in nature. Reproduction in whole or in part
-' is prohibited without the prior written consent of Roku, Inc.
-'
-' Under no circumstance may this software or any derivative thereof be
-' combined with any third party software, including open source software,
-' without the written permission of the Copyright owner.
 '
 ' File: utils.brs
 '
@@ -37,7 +29,7 @@ function roToStringInv(obj as Dynamic, invalidString as string) as String
     else if typeStr = "Boolean"
         if obj
             s = "true"
-        else 
+        else
             s = "false"
         end if
     else if typeStr = "Double"
@@ -129,7 +121,7 @@ function _arrayToStringInv(array as Dynamic, invalidString as String) as String
             first = false
 
             s = s + roToStringInv(val, invalidString)
-            
+
         end for
         s = s + "]"
     end if
